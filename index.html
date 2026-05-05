@@ -824,10 +824,16 @@
   <div class="hero-grain"></div>
 
   <div class="wrap hero-topbar">
-    <div id="heroLogo" aria-label="Kikoautos" role="img" style="display:inline-block;line-height:0;color:#FAFAF7;"></div>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <div id="heroLogo" aria-label="Kikoautos" role="img" style="display:inline-block;line-height:0;color:#FAFAF7;"></div>
+      <span class="pill" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);color:#FAFAF7;">
+        <span class="dot" style="background:#A01818;"></span>
+        MOTOS
+      </span>
+    </div>
     <div class="pill hide-mobile" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);color:#FAFAF7;">
       <span class="dot" style="background:#A01818;"></span>
-      SEU CARRO. NOSSA VITRINE.
+      SUA MOTO. NOSSA VITRINE.
     </div>
   </div>
 
@@ -839,7 +845,7 @@
     <h1 class="hero-h1" id="heroH1"></h1>
     <p class="hero-sub" id="heroSub"></p>
     <div class="hero-ctas" style="justify-content:flex-start;">
-      <a href="#form" class="btn btn-red">Avaliar meu carro <span class="arrow">→</span></a>
+      <a href="#form" class="btn btn-red">Avaliar minha moto <span class="arrow">→</span></a>
       <a href="#processo" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.35);color:#FAFAF7;">Como funciona</a>
     </div>
     <div class="hero-dots" style="justify-content:flex-start;">
@@ -877,10 +883,10 @@
     <div class="grid-2-mobile" style="display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:end;margin-bottom:3rem;max-width:1100px;">
       <div>
         <div class="kicker" style="margin-bottom:1.25rem;">
-          <span class="dot"></span><span>A MATEMÁTICA DO CARRO PARADO</span>
+          <span class="dot"></span><span>A MATEMÁTICA DA MOTO PARADA</span>
         </div>
         <h2 style="max-width:680px;">
-          Vender carro hoje parece ter <span class="serif" id="tresSaidas" style="color:var(--red);position:relative;display:inline-block;">
+          Vender moto hoje parece ter <span class="serif" id="tresSaidas" style="color:var(--red);position:relative;display:inline-block;">
             três saídas
             <svg viewBox="0 0 260 14" preserveAspectRatio="none" style="position:absolute;left:-4px;right:-4px;top:52%;width:calc(100% + 8px);height:10px;overflow:visible;pointer-events:none;">
               <path id="tresSaidasPath" d="M2 8 Q70 3 130 7 T258 5" fill="none" stroke="#A01818" stroke-width="3" stroke-linecap="round" style="stroke-dasharray:280;stroke-dashoffset:280;transition:stroke-dashoffset 900ms var(--ease-out) 500ms;"></path>
@@ -908,7 +914,7 @@
           </div>
         </div>
         <h3 style="margin-top:0.25rem;font-size:22px;letter-spacing:-0.02em;">Troca na concessionária</h3>
-        <p style="font-size:14px;color:var(--ink-3);">Você sai perdendo antes de chegar em casa.</p>
+        <p style="font-size:14px;color:var(--ink-3);">Você sai perdendo antes de sair do pátio.</p>
         <div style="margin-top:auto;padding-top:1.25rem;border-top:1px solid rgba(10,10,10,0.08);">
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
             <span class="mono" style="font-size:10px;letter-spacing:0.14em;color:var(--ink-4);">DESCONTO EMBUTIDO</span>
@@ -917,7 +923,7 @@
           <div style="height:4px;background:rgba(10,10,10,0.06);border-radius:2px;overflow:hidden;">
             <div class="obj-bar" style="height:100%;width:0%;background:repeating-linear-gradient(90deg,#A01818 0 6px,#7C1414 6px 12px);transition:width 1400ms var(--ease-out) 600ms;"></div>
           </div>
-          <div style="font-size:12px;color:var(--ink-4);margin-top:10px;line-height:1.5;">Em R$ 100k → R$ 15–20k evaporam</div>
+          <div style="font-size:12px;color:var(--ink-4);margin-top:10px;line-height:1.5;">Em R$ 40k → R$ 6–8k evaporam</div>
         </div>
       </div>
 
@@ -939,12 +945,12 @@
         <div style="margin-top:auto;padding-top:1.25rem;border-top:1px solid rgba(10,10,10,0.08);">
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
             <span class="mono" style="font-size:10px;letter-spacing:0.14em;color:var(--ink-4);">TEMPO MÉDIO</span>
-            <span class="obj-perda" data-target="6" data-suffix=" sem" style="font-size:28px;font-weight:500;color:var(--red);letter-spacing:-0.02em;font-variant-numeric:tabular-nums;">0 sem</span>
+            <span class="obj-perda" data-target="8" data-suffix=" sem" style="font-size:28px;font-weight:500;color:var(--red);letter-spacing:-0.02em;font-variant-numeric:tabular-nums;">0 sem</span>
           </div>
           <div style="height:4px;background:rgba(10,10,10,0.06);border-radius:2px;overflow:hidden;">
             <div class="obj-bar" style="height:100%;width:0%;background:repeating-linear-gradient(90deg,#A01818 0 6px,#7C1414 6px 12px);transition:width 1400ms var(--ease-out) 780ms;"></div>
           </div>
-          <div style="font-size:12px;color:var(--ink-4);margin-top:10px;line-height:1.5;">Webmotors, OLX, MercadoLivre</div>
+          <div style="font-size:12px;color:var(--ink-4);margin-top:10px;line-height:1.5;">OLX, MercadoLivre, Facebook</div>
         </div>
       </div>
 
@@ -963,11 +969,11 @@
             </svg>
           </div>
         </div>
-        <h3 style="margin-top:0.25rem;font-size:22px;letter-spacing:-0.02em;">Ficar parado</h3>
-        <p style="font-size:14px;color:var(--ink-3);">Cada mês na garagem, seu carro vale menos.</p>
+        <h3 style="margin-top:0.25rem;font-size:22px;letter-spacing:-0.02em;">Ficar parada</h3>
+        <p style="font-size:14px;color:var(--ink-3);">Cada mês na garagem, sua moto vale menos.</p>
         <div style="margin-top:auto;padding-top:1.25rem;border-top:1px solid rgba(10,10,10,0.08);">
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
-            <span class="mono" style="font-size:10px;letter-spacing:0.14em;color:var(--ink-4);">POR MÊS PARADO</span>
+            <span class="mono" style="font-size:10px;letter-spacing:0.14em;color:var(--ink-4);">POR MÊS PARADA</span>
             <span class="obj-perda" data-target="-1.5" data-decimals="1" data-suffix="%" style="font-size:28px;font-weight:500;color:var(--red);letter-spacing:-0.02em;font-variant-numeric:tabular-nums;">0%</span>
           </div>
           <div style="height:4px;background:rgba(10,10,10,0.06);border-radius:2px;overflow:hidden;">
@@ -1011,7 +1017,7 @@
             </div>
             <div style="display:flex;flex-direction:column;gap:2px;">
               <span class="mono" style="font-size:9px;letter-spacing:0.18em;color:rgba(255,255,255,0.5);">CUSTO</span>
-              <span style="font-size:14px;font-weight:500;color:#fff;letter-spacing:-0.01em;">R$ 0 antecipado</span>
+              <span style="font-size:14px;font-weight:500;color:#fff;letter-spacing:-0.01em;">R$ 300 taxa de preparação</span>
             </div>
           </div>
         </div>
@@ -1030,7 +1036,7 @@
           <span class="dot"></span><span>PARCERIA DE VENDA</span>
         </div>
         <h2 style="margin-bottom:1.75rem;">Sua <span class="serif" style="color:var(--red);">vitrine</span> na maior referência do Vale do Paraíba.</h2>
-        <p style="max-width:420px;margin-bottom:2rem;font-size:16px;">Não é consignação velha. É uma parceria desenhada pra quem tem um carro bom e quer vender com conforto, velocidade e preço justo.</p>
+        <p style="max-width:420px;margin-bottom:2rem;font-size:16px;">Não é consignação velha. É uma parceria desenhada pra quem tem uma moto boa e quer vender com conforto, velocidade e preço justo.</p>
       </div>
       <div id="parcList">
         <div class="parc-row" data-idx="0">
@@ -1045,9 +1051,9 @@
           <div>
             <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px;">
               <span class="mono" style="font-size:11px;color:var(--red);letter-spacing:0.14em;font-weight:500;">01</span>
-              <h3 style="font-size:20px;margin:0;letter-spacing:-0.02em;">Taxa de ativação única</h3>
+              <h3 style="font-size:20px;margin:0;letter-spacing:-0.02em;">Taxa de preparação única</h3>
             </div>
-            <p style="font-size:14px;margin:0;max-width:440px;">R$ 400 cobrem a preparação do carro, fotos profissionais, anúncio em 6+ portais e mídia paga. Sem mensalidade — comissão só na venda.</p>
+            <p style="font-size:14px;margin:0;max-width:440px;">R$ 300 cobrem cautelar, detalhamento profissional, fotos e anúncio em 6+ portais e mídia paga. Sem mensalidade — comissão só na venda.</p>
           </div>
         </div>
         <div class="parc-row" data-idx="1">
@@ -1063,7 +1069,7 @@
               <span class="mono" style="font-size:11px;color:var(--red);letter-spacing:0.14em;font-weight:500;">02</span>
               <h3 style="font-size:20px;margin:0;letter-spacing:-0.02em;">Você define o preço mínimo</h3>
             </div>
-            <p style="font-size:14px;margin:0;max-width:440px;">A gente sugere com base em dados. Mas quem decide é você.</p>
+            <p style="font-size:14px;margin:0;max-width:440px;">A gente sugere com base na FIPE e no mercado regional. Mas quem decide é você.</p>
           </div>
         </div>
         <div class="parc-row" data-idx="2">
@@ -1189,10 +1195,10 @@
   <div class="wrap">
     <div class="reveal-up" style="max-width:820px;margin-bottom:3rem;">
       <div class="kicker" style="margin-bottom:1.25rem;">
-        <span class="dot"></span><span>ALCANCE · ONDE SEU CARRO APARECE</span>
+        <span class="dot"></span><span>ALCANCE · ONDE SUA MOTO APARECE</span>
       </div>
       <h2>Anunciar aqui é estar em<br><span class="serif" style="color:var(--red);">vários lugares</span> ao mesmo tempo.</h2>
-      <p style="margin-top:1rem;font-size:17px;max-width:620px;line-height:1.45;">A gente <strong class="serif" style="color:var(--red);font-weight:600;">investe pesado</strong> todo mês em portais, tráfego pago, mídia social e carteira ativa. <span style="color:var(--ink);">Quando seu carro entra, ele entra em tudo isso ao mesmo tempo</span> — sem você pagar por nenhum desses canais.</p>
+      <p style="margin-top:1rem;font-size:17px;max-width:620px;line-height:1.45;">A gente <strong class="serif" style="color:var(--red);font-weight:600;">investe pesado</strong> todo mês em portais, tráfego pago, mídia social e carteira ativa. <span style="color:var(--ink);">Quando sua moto entra, ele entra em tudo isso ao mesmo tempo</span> — sem você pagar por nenhum desses canais.</p>
     </div>
 
     <div class="grid-2-mobile" style="display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start;">
@@ -1297,7 +1303,7 @@
         <div class="kicker" style="margin-bottom:1.25rem;">
           <span class="dot"></span><span>VELOCIDADE DE VENDA</span>
         </div>
-        <h2>A maioria dos carros sai antes de <span class="serif" style="color:var(--red);">duas</span> semanas.</h2>
+        <h2>A maioria dos veículos sai antes de <span class="serif" style="color:var(--red);">duas</span> semanas.</h2>
       </div>
     </div>
 
@@ -1346,15 +1352,15 @@
         <div style="margin-bottom:2rem;padding:1.25rem;background:#FAFAF7;border:1px solid rgba(10,10,10,0.08);border-radius:10px;">
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;gap:12px;flex-wrap:wrap;">
             <div>
-              <div class="mono" style="font-size:10px;letter-spacing:0.14em;color:var(--ink-4);margin-bottom:4px;">VALOR DO SEU CARRO</div>
-              <div id="compValorFmt" style="font-size:32px;font-weight:500;letter-spacing:-0.03em;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums;">R$ 100.000</div>
+              <div class="mono" style="font-size:10px;letter-spacing:0.14em;color:var(--ink-4);margin-bottom:4px;">VALOR DA SUA MOTO</div>
+              <div id="compValorFmt" style="font-size:32px;font-weight:500;letter-spacing:-0.03em;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums;">R$ 40.000</div>
             </div>
             <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--red);background:rgba(160,24,24,0.08);padding:4px 10px;border-radius:999px;font-weight:500;white-space:nowrap;">← ARRASTE →</div>
           </div>
-          <input id="compSlider" type="range" min="30000" max="500000" step="5000" value="100000" class="sim-slider" style="width:100%;--pct:14.9%;" aria-label="Valor do seu carro (simulador)" />
+          <input id="compSlider" type="range" min="10000" max="150000" step="500" value="40000" class="sim-slider" style="width:100%;--pct:21.4%;" aria-label="Valor da sua moto (simulador)" />
           <div style="display:flex;justify-content:space-between;margin-top:6px;">
-            <span class="mono" style="font-size:9px;color:var(--ink-5);letter-spacing:0.1em;">R$ 30k</span>
-            <span class="mono" style="font-size:9px;color:var(--ink-5);letter-spacing:0.1em;">R$ 500k</span>
+            <span class="mono" style="font-size:9px;color:var(--ink-5);letter-spacing:0.1em;">R$ 10k</span>
+            <span class="mono" style="font-size:9px;color:var(--ink-5);letter-spacing:0.1em;">R$ 150k</span>
           </div>
         </div>
 
@@ -1391,8 +1397,7 @@
           <span class="dot" style="background:#fff;"></span>
           COMISSÃO KIKOAUTOS
         </div>
-        <p style="font-size:15px;color:var(--ink-3);max-width:340px;margin-bottom:0.5rem;">A gente cobra 5% sobre o valor de venda. Você define o piso.</p>
-        <p style="font-size:12px;color:var(--ink-4);max-width:340px;margin-bottom:1rem;">Taxa única de ativação de R$ 400 no início. Sem mensalidade.</p>
+        <p id="compCopy" style="font-size:15px;color:var(--ink-3);max-width:340px;margin-bottom:1rem;">A gente cobra 5% sobre o valor de venda + R$ 300 de preparação. Você define o piso.</p>
 
         <div id="compBigPct" style="display:flex;align-items:baseline;gap:12px;margin-bottom:1rem;opacity:0;transform:translateY(12px);transition:opacity 600ms ease 300ms,transform 600ms var(--ease-out) 300ms;">
           <div style="font-size:64px;font-weight:500;letter-spacing:-0.05em;line-height:0.9;color:var(--ink);">
@@ -1422,7 +1427,7 @@
           <div id="compDelta" style="font-size:72px;font-weight:500;letter-spacing:-0.04em;line-height:1;color:var(--red);opacity:0;transform:translateY(8px);transition:opacity 500ms ease 2100ms,transform 500ms var(--ease-out) 2100ms;font-variant-numeric:tabular-nums;">+R$ 13k</div>
         </div>
 
-        <p style="font-size:13px;color:var(--ink-3);max-width:360px;margin-top:1rem;">Simulação. Concessionária embute ~18% de perda na troca; Kikoautos cobra 5% de comissão sobre a venda.</p>
+        <p style="font-size:13px;color:var(--ink-3);max-width:360px;margin-top:1rem;">Simulação. Concessionária embute ~18% de perda na troca; Kikoautos cobra comissão só na venda.</p>
       </div>
     </div>
   </div>
@@ -1440,18 +1445,18 @@
     <div class="depo-grid grid-2-mobile">
       <div class="depo-card card card-hover" data-idx="0">
         <div class="serif" style="font-size:56px;color:var(--red);line-height:0.5;height:24px;opacity:0.8;">&ldquo;</div>
-        <p style="font-size:17px;color:var(--ink);line-height:1.45;letter-spacing:-0.015em;font-weight:400;flex:1;">Coloquei na segunda. Na sexta me ligaram que tinha vendido.</p>
+        <p style="font-size:17px;color:var(--ink);line-height:1.45;letter-spacing:-0.015em;font-weight:400;flex:1;">Tentei vender três semanas no Facebook. Cheio de curiosos, ninguém sério. Coloquei na Kikoautos numa quinta, vendeu no fim de semana.</p>
         <div style="padding-top:1.25rem;border-top:1px solid rgba(10,10,10,0.08);display:flex;gap:12px;align-items:center;">
-          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--ink),#3A3A3A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">CM</div>
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--ink),#3A3A3A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">LT</div>
           <div>
-            <div style="font-size:14px;font-weight:500;">Carlos M.</div>
-            <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;">Hilux SRX 2022</div>
+            <div style="font-size:14px;font-weight:500;">Lucas T.</div>
+            <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;">Lander 250 2022</div>
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
           <div style="padding:10px 12px;background:rgba(10,10,10,0.04);border-radius:8px;">
             <div class="mono" style="font-size:9px;letter-spacing:0.12em;color:var(--ink-4);">VENDIDO POR</div>
-            <div style="font-size:14px;font-weight:500;margin-top:2px;">R$ 289.000</div>
+            <div style="font-size:14px;font-weight:500;margin-top:2px;">R$ 21.500</div>
           </div>
           <div style="padding:10px 12px;background:var(--red);color:#fff;border-radius:8px;">
             <div class="mono" style="font-size:9px;letter-spacing:0.12em;color:rgba(255,255,255,0.7);">EM</div>
@@ -1462,44 +1467,44 @@
 
       <div class="depo-card card card-hover" data-idx="1">
         <div class="serif" style="font-size:56px;color:var(--red);line-height:0.5;height:24px;opacity:0.8;">&ldquo;</div>
-        <p style="font-size:17px;color:var(--ink);line-height:1.45;letter-spacing:-0.015em;font-weight:400;flex:1;">Ia dar de troca na concessionária. Recebi R$ 18.000 a mais do que ia receber — e não saí do sofá.</p>
+        <p style="font-size:17px;color:var(--ink);line-height:1.45;letter-spacing:-0.015em;font-weight:400;flex:1;">Ia dar de entrada numa moto nova e ia perder quase R$ 4.000 na troca. Aqui recebi o valor cheio e ainda saí na frente.</p>
         <div style="padding-top:1.25rem;border-top:1px solid rgba(10,10,10,0.08);display:flex;gap:12px;align-items:center;">
-          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--ink),#3A3A3A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">MA</div>
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--ink),#3A3A3A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">PR</div>
           <div>
-            <div style="font-size:14px;font-weight:500;">Marina A.</div>
-            <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;">Range Rover Evoque 2021</div>
+            <div style="font-size:14px;font-weight:500;">Patrícia R.</div>
+            <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;">CB 500F 2021</div>
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
           <div style="padding:10px 12px;background:rgba(10,10,10,0.04);border-radius:8px;">
             <div class="mono" style="font-size:9px;letter-spacing:0.12em;color:var(--ink-4);">VENDIDO POR</div>
-            <div style="font-size:14px;font-weight:500;margin-top:2px;">R$ 345.000</div>
+            <div style="font-size:14px;font-weight:500;margin-top:2px;">R$ 28.500</div>
           </div>
           <div style="padding:10px 12px;background:var(--red);color:#fff;border-radius:8px;">
             <div class="mono" style="font-size:9px;letter-spacing:0.12em;color:rgba(255,255,255,0.7);">EM</div>
-            <div style="font-size:14px;font-weight:500;margin-top:2px;">11 dias</div>
+            <div style="font-size:14px;font-weight:500;margin-top:2px;">9 dias</div>
           </div>
         </div>
       </div>
 
       <div class="depo-card card card-hover" data-idx="2">
         <div class="serif" style="font-size:56px;color:var(--red);line-height:0.5;height:24px;opacity:0.8;">&ldquo;</div>
-        <p style="font-size:17px;color:var(--ink);line-height:1.45;letter-spacing:-0.015em;font-weight:400;flex:1;">Cansei da OLX, dos curiosos e golpistas. Aqui é outro nível. Atendimento de boutique.</p>
+        <p style="font-size:17px;color:var(--ink);line-height:1.45;letter-spacing:-0.015em;font-weight:400;flex:1;">Não queria negociar com desconhecido. Aqui a equipe fez tudo — só apareceu pra mim a proposta fechada.</p>
         <div style="padding-top:1.25rem;border-top:1px solid rgba(10,10,10,0.08);display:flex;gap:12px;align-items:center;">
-          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--ink),#3A3A3A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">ER</div>
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--ink),#3A3A3A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">RM</div>
           <div>
-            <div style="font-size:14px;font-weight:500;">Eduardo R.</div>
-            <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;">Compass Limited 2023</div>
+            <div style="font-size:14px;font-weight:500;">Renato M.</div>
+            <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;">MT-09 2023</div>
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
           <div style="padding:10px 12px;background:rgba(10,10,10,0.04);border-radius:8px;">
             <div class="mono" style="font-size:9px;letter-spacing:0.12em;color:var(--ink-4);">VENDIDO POR</div>
-            <div style="font-size:14px;font-weight:500;margin-top:2px;">R$ 178.000</div>
+            <div style="font-size:14px;font-weight:500;margin-top:2px;">R$ 47.000</div>
           </div>
           <div style="padding:10px 12px;background:var(--red);color:#fff;border-radius:8px;">
             <div class="mono" style="font-size:9px;letter-spacing:0.12em;color:rgba(255,255,255,0.7);">EM</div>
-            <div style="font-size:14px;font-weight:500;margin-top:2px;">7 dias</div>
+            <div style="font-size:14px;font-weight:500;margin-top:2px;">12 dias</div>
           </div>
         </div>
       </div>
@@ -1515,7 +1520,7 @@
         <span class="dot"></span><span>A RÉGUA</span>
       </div>
       <h2 style="width:925px;max-width:100%;">A gente só anuncia o que a gente <span class="serif" style="color:var(--red);">venderia</span>.</h2>
-      <p style="margin-top:1rem;font-size:16px;max-width:520px;">Quatro critérios objetivos. Se teu carro não se encaixa em algum, a gente conversa — tem saída pra quase tudo.</p>
+      <p style="margin-top:1rem;font-size:16px;max-width:520px;">Quatro critérios objetivos. Se tua moto não se encaixa em algum, a gente conversa — tem saída pra quase tudo.</p>
     </div>
 
     <div class="regua-table">
@@ -1557,11 +1562,11 @@
           <div style="font-size:18px;font-weight:500;letter-spacing:-0.01em;">Quilometragem</div>
         </div>
         <div class="regua-cell entra">
-          <div><div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;">Até 40.000 km</div></div>
+          <div><div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;">Até 50.000 km</div></div>
         </div>
         <div class="regua-cell fora">
           <div>
-            <div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(177,27,27,0.5);text-decoration-thickness:1.5px;">Acima de 40.000 km</div>
+            <div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(177,27,27,0.5);text-decoration-thickness:1.5px;">Acima de 50.000 km</div>
             <div style="font-size:13px;color:var(--ink-4);margin-top:4px;">Avaliado caso a caso, depende do histórico.</div>
           </div>
         </div>
@@ -1587,11 +1592,11 @@
           <div style="font-size:18px;font-weight:500;letter-spacing:-0.01em;">Histórico</div>
         </div>
         <div class="regua-cell entra">
-          <div><div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;">Revisões em concessionária</div></div>
+          <div><div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;">Revisões em dia</div></div>
         </div>
         <div class="regua-cell fora">
           <div>
-            <div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(177,27,27,0.5);text-decoration-thickness:1.5px;">Rodou em locadora, tem sinistro ou retoque</div>
+            <div style="font-size:17px;font-weight:500;letter-spacing:-0.01em;color:var(--ink-3);text-decoration:line-through;text-decoration-color:rgba(177,27,27,0.5);text-decoration-thickness:1.5px;">Tem sinistro, retoque ou histórico de queda</div>
             <div style="font-size:13px;color:var(--ink-4);margin-top:4px;">Scanner de espessura detecta massa.</div>
           </div>
         </div>
@@ -1623,47 +1628,47 @@
           <span class="faq-icon" aria-hidden="true"></span>
         </summary>
         <div class="faq-a">
-          <p>Sim, uma taxa única de <strong>R$ 400</strong> que cobre a ativação completa do seu anúncio: <strong>preparação do carro</strong>, estúdio fotográfico, distribuição em 6+ portais, mídia paga em Meta e Google, vitrine no nosso site e Instagram, e atendimento dos nossos consultores. É um pontapé inicial, sem mensalidade e sem renovação.</p>
+          <p>Sim, uma taxa de <strong>R$ 300</strong> que cobre cautelar, detalhamento profissional, estúdio fotográfico, distribuição em 6+ portais e mídia paga. Sem mensalidade e sem renovação.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>
-          <span class="faq-q">Qual a comissão da Kikoautos quando o carro vende?</span>
+          <span class="faq-q">Qual a comissão da Kikoautos quando a moto vende?</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </summary>
         <div class="faq-a">
-          <p>Cobramos <strong>5% sobre o valor de venda</strong> — só quando o carro vende, de fato. Pra comparar: numa troca em concessionária, a perda média embutida é de cerca de 18% do valor. Você recebe muito mais líquido vendendo direto pelo consumidor final.</p>
+          <p>Motos até <strong>R$ 40.000 de FIPE</strong>: comissão fixa de <strong>R$ 2.000</strong>. Acima de R$ 40.000: cobramos <strong>5% sobre o valor de venda</strong>. Só quando a moto vende, de fato. Pra comparar: numa troca em concessionária, a perda média embutida é de cerca de 18% do valor.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>
-          <span class="faq-q">Quanto tempo leva pra vender o meu carro?</span>
+          <span class="faq-q">Quanto tempo leva pra vender a minha moto?</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </summary>
         <div class="faq-a">
-          <p>A maioria dos carros sai em até <strong>duas semanas</strong>. No último trimestre, 53% venderam em até 15 dias. Carros bem precificados e dentro da nossa régua giram ainda mais rápido — alguns saem antes mesmo de entrar nos portais, direto pra carteira de clientes.</p>
+          <p>A maioria das motos sai em até <strong>duas semanas</strong>. No último trimestre, 61% venderam em até 15 dias. Motos bem precificadas e dentro da nossa régua giram ainda mais rápido — algumas saem antes mesmo de entrar nos portais, direto pra carteira de clientes.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>
-          <span class="faq-q">Onde meu carro vai aparecer?</span>
+          <span class="faq-q">Onde minha moto vai aparecer?</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </summary>
         <div class="faq-a">
-          <p>Em <strong>7 frentes simultâneas</strong>: site Kikoautos, Webmotors, MercadoLivre, OLX, iCarros e outros portais (6+ no total), Instagram (28 mil seguidores), 3 grupos Best Friends + canal de novidades (mais de 2.000 pessoas), Meta Ads e Google Ads, e a nossa carteira ativa de clientes. Tudo ao mesmo tempo, sem custo adicional.</p>
+          <p>Em <strong>7 frentes simultâneas</strong>: site Kikoautos, MercadoLivre, OLX, Facebook Marketplace e outros portais (6+ no total), Instagram (31 mil seguidores), 3 grupos Best Friends + canal de novidades (mais de 2.000 pessoas), Meta Ads e Google Ads, e a nossa carteira ativa de clientes. Tudo ao mesmo tempo, sem custo adicional.</p>
         </div>
       </details>
 
       <details class="faq-item">
         <summary>
-          <span class="faq-q">Quem define o preço do carro?</span>
+          <span class="faq-q">Quem define o preço da moto?</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </summary>
         <div class="faq-a">
-          <p><strong>Você define o preço mínimo.</strong> A gente sugere uma faixa baseada em dados de mercado, mas a decisão final é sua. A negociação com o comprador acontece dentro desse mínimo — você nunca vende por menos do que combinou.</p>
+          <p><strong>Você define o preço mínimo.</strong> A gente sugere uma faixa baseada na FIPE e no mercado regional, mas a decisão final é sua. A negociação com o comprador acontece dentro desse mínimo — você nunca vende por menos do que combinou.</p>
         </div>
       </details>
 
@@ -1679,11 +1684,11 @@
 
       <details class="faq-item">
         <summary>
-          <span class="faq-q">E se meu carro não se encaixa nos critérios da régua?</span>
+          <span class="faq-q">E se minha moto não se encaixa nos critérios da régua?</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </summary>
         <div class="faq-a">
-          <p>A gente conversa. Os critérios (ano 2020+, até 40k km, documentação em dia, sem sinistro) são uma régua de qualidade — mas a maioria dos casos fora da régua tem saída: ajuste de preço, avaliação caso a caso ou direcionamento pro canal certo. Manda o seu carro que a gente avalia.</p>
+          <p>A gente conversa. Os critérios (ano 2020+, até 50k km, documentação em dia, sem sinistro) são uma régua de qualidade — mas a maioria dos casos fora da régua tem saída. Manda sua moto que a gente avalia.</p>
         </div>
       </details>
 
@@ -1694,6 +1699,26 @@
         </summary>
         <div class="faq-a">
           <p>Sim. Nossos <strong>10 consultores</strong> filtram curiosos, qualificam interessados e conduzem a negociação. Você não precisa atender ligação, marcar test drive nem responder mensagem — só aprovar a proposta final, dentro do mínimo que você definiu.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-q">Minha moto tem acessórios. Conta no preço?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-a">
+          <p>Os acessórios podem valorizar o anúncio dependendo do item. Na avaliação a gente analisa o que agrega valor de mercado e o que é preferência pessoal. Traga a lista que a gente orienta.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-q">Aceitam qualquer estilo de moto?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-a">
+          <p>Trabalhamos com motos de rua, naked, esportivas e touring. Motos de trilha ou custom são avaliadas caso a caso — depende do estado, ano e demanda de mercado na região.</p>
         </div>
       </details>
 
@@ -1713,7 +1738,7 @@
             <span class="dot" style="background:var(--red);"></span>
             <span style="color:rgba(255,255,255,0.75);">AVALIAÇÃO</span>
           </div>
-          <h2 style="color:#fff;margin-bottom:1.25rem;line-height:1.05;">Avalie seu <span class="serif" style="color:var(--red);">carro</span>.</h2>
+          <h2 style="color:#fff;margin-bottom:1.25rem;line-height:1.05;">Avalie sua <span class="serif" style="color:var(--red);">moto</span>.</h2>
           <p style="font-size:15px;color:rgba(255,255,255,0.82);max-width:320px;line-height:1.5;">Resposta no WhatsApp em até 24h.<br>Sem ligação comercial, sem pressão.</p>
         </div>
       </div>
@@ -1739,7 +1764,7 @@
           <div id="fitWarning" style="display:none;padding:14px 16px;background:rgba(160,24,24,0.06);border:1px solid rgba(160,24,24,0.2);border-radius:10px;font-size:13px;color:var(--red);margin-bottom:1.5rem;">
             <strong style="font-weight:500;">Atenção:</strong> Nosso padrão atual é 2020 ou mais novo, até 40.000 km. Mesmo assim, podemos conversar — clica em enviar que a gente retorna.
           </div>
-          <button type="submit" class="btn btn-red" style="width:100%;padding:18px 24px;font-size:15px;justify-content:center;">Quero avaliar meu carro <span class="arrow">→</span></button>
+          <button type="submit" class="btn btn-red" style="width:100%;padding:18px 24px;font-size:15px;justify-content:center;">Quero avaliar minha moto <span class="arrow">→</span></button>
           <div style="margin-top:1.5rem;display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;">
             <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;display:flex;align-items:center;gap:6px;"><span style="color:var(--red);">—</span>Sem custo antecipado</div>
             <div class="mono" style="font-size:10px;letter-spacing:0.12em;color:var(--ink-4);text-transform:uppercase;display:flex;align-items:center;gap:6px;"><span style="color:var(--red);">—</span>Resposta em até 24h</div>
@@ -1770,7 +1795,7 @@
 </div>
 
 <!-- Float CTA -->
-<a href="#form" class="btn btn-red float-cta">Avaliar meu carro <span class="arrow">→</span></a>
+<a href="#form" class="btn btn-red float-cta">Avaliar minha moto <span class="arrow">→</span></a>
 
 <script>
 (function(){
@@ -1890,16 +1915,16 @@
   (function(){
     const slides = [
       {
-        kicker: 'ÚLTIMOS NÚMEROS',
-        line1: '53% dos\nnossos carros',
-        line2Prefix: 'vendem em',
-        accent: 'até 15 dias.',
+        kicker: 'VITRINE QUE GIRA',
+        line1: 'Sua moto na',
+        line2Prefix: 'vitrine que\n',
+        accent: 'mais vende.',
         line2Suffix: '',
-        sub: 'Dado real do último trimestre. Vitrine que gira.',
+        sub: 'Exposição máxima, comprador certo, venda rápida.',
       },
       {
         kicker: 'VITRINE DE VENDA',
-        line1: 'Você entra\ncom o carro.',
+        line1: 'Você entra\ncom a moto.',
         line2Prefix: 'A gente entra com\n',
         accent: 'todo o resto.',
         line2Suffix: '',
@@ -1908,10 +1933,10 @@
       {
         kicker: 'TRACK RECORD',
         line1: 'Venda com quem',
-        line2Prefix: 'já',
-        accent: 'vendeu 94 carros',
-        line2Suffix: '\nde clientes nos\núltimos dias',
-        sub: 'Você entrega o carro. A gente entrega a venda.',
+        line2Prefix: '',
+        accent: 'vende moto',
+        line2Suffix: '\nde clientes\no tempo todo.',
+        sub: 'Você entrega a moto. A gente entrega a venda.',
       },
     ];
 
@@ -2129,10 +2154,10 @@
   /* ---------- Passos ---------- */
   (function(){
     const passos = [
-      { n:'01', t:'Chegada', d:'Recebemos o carro no portão. Conversa curta, café, primeira leitura visual.', dur:'15 min', ico:'chegada' },
-      { n:'02', t:'Perícia completa', d:'Scanner de espessura de tinta. Análise mecânica, documental e de histórico.', dur:'90 min', ico:'pericia' },
+      { n:'01', t:'Chegada', d:'Recebemos a moto no portão. Conversa curta, café, primeira leitura visual.', dur:'15 min', ico:'chegada' },
+      { n:'02', t:'Perícia completa', d:'Scanner de espessura de tinta. Análise mecânica, documental e verificação de chassi.', dur:'90 min', ico:'pericia' },
       { n:'03', t:'Preço e contrato', d:'Você define o mínimo. A gente sugere o teto. Contrato sem custo antecipado.', dur:'No dia', ico:'contrato' },
-      { n:'04', t:'Preparação', d:'Lavagem detalhada, polimento e higienização interna em nível concurso.', dur:'1 dia', ico:'preparacao' },
+      { n:'04', t:'Preparação', d:'Lavagem detalhada, polimento e higienização completa. Sua moto preparada no padrão Kikoautos.', dur:'1 dia', ico:'preparacao' },
       { n:'05', t:'Estúdio', d:'Sessão fotográfica em estúdio próprio. Foto e vídeo no padrão Kikoautos.', dur:'1 dia', ico:'estudio' },
       { n:'06', t:'Ativação', d:'Instagram, Meta Ads, portais, canal de novidades, Best Friends.', dur:'24h', ico:'ativacao' },
       { n:'07', t:'Negociação', d:'Equipe conduz todas as tratativas. Só aparece pra você a proposta real.', dur:'Até venda', ico:'negociacao' },
@@ -2143,7 +2168,7 @@
       const s = strokeWidth;
       const wh = 'width="' + size + '" height="' + size + '" viewBox="0 0 40 40" fill="none"';
       switch(kind) {
-        case 'chegada': return '<svg ' + wh + '><path d="M4 26 L6 18 Q7 15 10 15 L14 15 L17 10 Q18 9 20 9 L27 9 Q29 9 30 11 L33 15 L35 16 Q36 16.5 36 18 L36 26 L32 26" stroke="' + color + '" stroke-width="' + s + '" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M4 26 L8 26 M14 26 L26 26 M32 26 L36 26" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round"/><circle cx="11" cy="27" r="3" stroke="' + color + '" stroke-width="' + s + '" fill="none"/><circle cx="29" cy="27" r="3" stroke="' + color + '" stroke-width="' + s + '" fill="none"/></svg>';
+        case 'chegada': return '<svg ' + wh + '><circle cx="9" cy="27" r="5" stroke="' + color + '" stroke-width="' + s + '" fill="none"/><circle cx="31" cy="27" r="5" stroke="' + color + '" stroke-width="' + s + '" fill="none"/><path d="M9 27 L17 27 L22 18 L29 18" stroke="' + color + '" stroke-width="' + s + '" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M22 18 L19 12 L24 12" stroke="' + color + '" stroke-width="' + s + '" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M27 18 L31 27" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round"/><path d="M14 18 L19 18" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round"/></svg>';
         case 'pericia': return '<svg ' + wh + '><circle cx="17" cy="17" r="10" stroke="' + color + '" stroke-width="' + s + '"/><path d="M24.5 24.5 L32 32" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round"/><path d="M12 17 L16 21 L23 13" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round" stroke-linejoin="round"/></svg>';
         case 'contrato': return '<svg ' + wh + '><path d="M10 6 L26 6 L32 12 L32 34 L10 34 Z" stroke="' + color + '" stroke-width="' + s + '" stroke-linejoin="round"/><path d="M26 6 L26 12 L32 12" stroke="' + color + '" stroke-width="' + s + '" stroke-linejoin="round"/><path d="M14 17 L22 17 M14 21 L26 21" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round"/><path d="M14 27 Q17 24 20 27 T26 27" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round" fill="none"/></svg>';
         case 'preparacao': return '<svg ' + wh + '><rect x="13" y="14" width="12" height="18" rx="1.5" stroke="' + color + '" stroke-width="' + s + '"/><path d="M16 14 L16 10 L22 10 L22 14" stroke="' + color + '" stroke-width="' + s + '" stroke-linejoin="round"/><path d="M19 10 L19 6" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round"/><path d="M25 16 L30 14 M25 20 L32 20 M25 24 L30 26" stroke="' + color + '" stroke-width="' + s + '" stroke-linecap="round"/><circle cx="33" cy="14" r="1" fill="' + color + '"/><circle cx="34" cy="20" r="1" fill="' + color + '"/><circle cx="33" cy="26" r="1" fill="' + color + '"/></svg>';
@@ -2319,6 +2344,12 @@
 
     const PERDA = 0.18;
     const COMISSAO = 0.05;
+    const PREP = 300;
+    const FIXO = 2000;
+    const LIMITE = 40000;
+    const SLIDER_MIN = 10000;
+    const SLIDER_MAX = 150000;
+    const copyEl = document.getElementById('compCopy');
     let animated = false;
 
     function fmtFull(n) { return 'R$ ' + n.toLocaleString('pt-BR'); }
@@ -2337,16 +2368,33 @@
     function update() {
       const valor = Number(slider.value);
       const concess = Math.round(valor * (1 - PERDA));
-      const kiko = Math.round(valor * (1 - COMISSAO));
+      const fixoMode = valor < LIMITE;
+      const custoKiko = fixoMode ? (FIXO + PREP) : Math.round(valor * COMISSAO + PREP);
+      const kiko = valor - custoKiko;
       const delta = kiko - concess;
       const maxVal = Math.max(concess, kiko);
 
-      const pct = ((valor - 30000) / (500000 - 30000)) * 100;
+      const pct = ((valor - SLIDER_MIN) / (SLIDER_MAX - SLIDER_MIN)) * 100;
       slider.style.setProperty('--pct', pct + '%');
 
       valorFmt.textContent = fmtFull(valor);
       concessFmt.innerHTML = fmtShort(concess) + '<span style="color:var(--ink-4);font-size:11px;margin-left:4px;">(troca)</span>';
       kikoFmt.innerHTML = fmtShort(kiko) + '<span style="color:var(--ink-4);font-size:11px;margin-left:4px;">(líquido)</span>';
+
+      const pctKiko = fixoMode ? (custoKiko / valor) * 100 : 5;
+      const pctVoce = 100 - pctKiko;
+      const pctKikoDisplay = fixoMode ? pctKiko.toFixed(1).replace('.', ',') : '5';
+      const pctVoceDisplay = fixoMode ? pctVoce.toFixed(1).replace('.', ',') : '95';
+
+      if (copyEl) {
+        copyEl.textContent = fixoMode
+          ? 'A gente cobra R$ 2.000 fixo + R$ 300 de preparação. Você define o piso.'
+          : 'A gente cobra 5% sobre o valor de venda + R$ 300 de preparação. Você define o piso.';
+      }
+
+      bigNum.textContent = pctKikoDisplay;
+      distVoceTxt.textContent = pctVoceDisplay + '% VOCÊ';
+      distKikoLbl.textContent = pctKikoDisplay + '% KIKOAUTOS';
 
       if (animated) {
         const concessPct = (concess / maxVal) * 100;
@@ -2361,6 +2409,9 @@
         deltaMark.style.opacity = delta > 0 ? '1' : '0';
         deltaMarkTxt.textContent = fmtDelta(delta).replace('R$ ', '');
 
+        distVoce.style.width = pctVoce + '%';
+        distKiko.style.width = pctKiko + '%';
+
         deltaEl.textContent = fmtDelta(delta);
       }
     }
@@ -2369,18 +2420,21 @@
 
     onVisible(section, () => {
       animated = true;
-      // Initial animation reveal
       requestAnimationFrame(() => {
         update();
+        const valor = Number(slider.value);
+        const fixoMode = valor < LIMITE;
+        const custoKiko = fixoMode ? (FIXO + PREP) : Math.round(valor * COMISSAO + PREP);
+        const pctKiko = fixoMode ? (custoKiko / valor) * 100 : 5;
+        const pctVoce = 100 - pctKiko;
         bigPctWrap.style.opacity = '1';
         bigPctWrap.style.transform = 'translateY(0)';
-        distVoce.style.width = '95%';
-        distKiko.style.width = '5%';
+        distVoce.style.width = pctVoce + '%';
+        distKiko.style.width = pctKiko + '%';
         distVoceTxt.style.opacity = '1';
         distKikoLbl.style.opacity = '1';
         deltaEl.style.opacity = '1';
         deltaEl.style.transform = 'translateY(0)';
-        countUp(bigNum, 5, { duration: 1100 });
       });
     }, 0.12);
 
@@ -2456,16 +2510,15 @@
   /* ---------- Sales toast ---------- */
   (function(){
     const feed = [
-      { modelo: 'Hilux SRX', ano: 2022, dias: 4, valor: 'R$ 289.000' },
-      { modelo: 'Range Rover Evoque', ano: 2021, dias: 11, valor: 'R$ 345.000' },
-      { modelo: 'Compass Limited', ano: 2023, dias: 7, valor: 'R$ 178.000' },
-      { modelo: 'Amarok V6', ano: 2022, dias: 9, valor: 'R$ 242.000' },
-      { modelo: 'Porsche Macan', ano: 2021, dias: 13, valor: 'R$ 398.000' },
-      { modelo: 'RAM Rampage', ano: 2024, dias: 6, valor: 'R$ 269.000' },
-      { modelo: 'BMW X3 xDrive', ano: 2022, dias: 8, valor: 'R$ 312.000' },
-      { modelo: 'Civic Touring', ano: 2023, dias: 5, valor: 'R$ 189.000' },
-      { modelo: 'Toyota SW4 Diamond', ano: 2021, dias: 10, valor: 'R$ 378.000' },
-      { modelo: 'Volvo XC60', ano: 2022, dias: 14, valor: 'R$ 298.000' },
+      { modelo: 'BMW R 1250 GS', ano: 2022, valor: 'R$ 92.000' },
+      { modelo: 'Ducati Hypermotard 698', ano: 2024, valor: 'R$ 89.500' },
+      { modelo: 'Kawasaki Z 650', ano: 2023, valor: 'R$ 39.000' },
+      { modelo: 'Harley-Davidson', ano: 2022, valor: 'R$ 65.490' },
+      { modelo: 'Harley-Davidson', ano: 2023, valor: 'R$ 80.490' },
+      { modelo: 'Triumph Bonneville', ano: 2021, valor: 'R$ 43.900' },
+      { modelo: 'Honda CG 160', ano: 2024, valor: 'R$ 22.990' },
+      { modelo: 'Royal Enfield', ano: 2023, valor: 'R$ 34.900' },
+      { modelo: 'Yamaha XMAX 250', ano: 2022, valor: 'R$ 26.500' },
     ];
 
     const toast = document.getElementById('salesToast');
@@ -2483,8 +2536,9 @@
 
     function render() {
       const s = feed[idx];
+      const dias = Math.floor(Math.random() * 20) + 1;
       title.textContent = s.modelo + ' ' + s.ano;
-      sub.innerHTML = 'Vendido em <span style="color:#fff;font-weight:500;">' + s.dias + ' dias</span>';
+      sub.innerHTML = 'Vendido em <span style="color:#fff;font-weight:500;">' + dias + ' ' + (dias === 1 ? 'dia' : 'dias') + '</span>';
       val.textContent = s.valor;
     }
 
