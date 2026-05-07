@@ -1074,9 +1074,9 @@
           <div>
             <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px;">
               <span class="mono" style="font-size:11px;color:var(--red);letter-spacing:0.14em;font-weight:500;">02</span>
-              <h3 style="font-size:20px;margin:0;letter-spacing:-0.02em;">Você define o preço mínimo</h3>
+              <h3 style="font-size:20px;margin:0;letter-spacing:-0.02em;">Definimos juntos o preço ideal</h3>
             </div>
-            <p style="font-size:14px;margin:0;max-width:440px;">A gente sugere com base na FIPE e no mercado regional. Mas quem decide é você.</p>
+            <p style="font-size:14px;margin:0;max-width:440px;">A gente sugere com base em dados. Mas quem decide é você.</p>
           </div>
         </div>
         <div class="parc-row" data-idx="2">
@@ -1404,7 +1404,10 @@
           <span class="dot" style="background:#fff;"></span>
           COMISSÃO KIKOAUTOS
         </div>
-        <p id="compCopy" style="font-size:15px;color:var(--ink-3);max-width:340px;margin-bottom:1rem;">A gente cobra 5% sobre o valor de venda + R$ 300 de preparação. Você define o piso.</p>
+        <div id="compCopy" style="font-size:15px;color:var(--ink-3);max-width:340px;margin-bottom:1rem;display:flex;flex-direction:column;gap:10px;">
+          <p style="margin:0;"><strong style="color:var(--ink);font-weight:500;">Até R$ 40 mil:</strong> A gente cobra R$ 2.000 fixo + R$ 300 de preparação. Você define o piso.</p>
+          <p style="margin:0;"><strong style="color:var(--ink);font-weight:500;">Acima de R$ 40 mil:</strong> A gente cobra 5% sobre o valor de venda + R$ 300 de preparação. Você define o piso.</p>
+        </div>
 
         <div id="compBigPct" style="display:flex;align-items:baseline;gap:12px;margin-bottom:1rem;opacity:0;transform:translateY(12px);transition:opacity 600ms ease 300ms,transform 600ms var(--ease-out) 300ms;">
           <div style="font-size:64px;font-weight:500;letter-spacing:-0.05em;line-height:0.9;color:var(--ink);">
@@ -1671,11 +1674,11 @@
 
       <details class="faq-item">
         <summary>
-          <span class="faq-q">Quem define o preço da moto?</span>
+          <span class="faq-q">Definimos juntos o preço ideal.</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </summary>
         <div class="faq-a">
-          <p><strong>Você define o preço mínimo.</strong> A gente sugere uma faixa baseada na FIPE e no mercado regional, mas a decisão final é sua. A negociação com o comprador acontece dentro desse mínimo — você nunca vende por menos do que combinou.</p>
+          <p>A gente traz dados de mercado, histórico de vendas parecidas e leitura do momento — você traz a sua expectativa. No fim, chegamos em um valor que faz sentido pra você e que o carro alcança. A negociação acontece sempre dentro do que combinamos: você nunca vende por menos do que aceitou.</p>
         </div>
       </details>
 
@@ -1763,10 +1766,9 @@
             <div><label class="form-label" for="lf-marca">Marca</label><input id="lf-marca" name="marca" class="form-input" autocomplete="off" required /></div>
             <div><label class="form-label" for="lf-modelo">Modelo</label><input id="lf-modelo" name="modelo" class="form-input" autocomplete="off" required /></div>
           </div>
-          <div class="grid-2-mobile" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1.5rem;">
+          <div class="grid-2-mobile" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;">
             <div><label class="form-label" for="lf-ano">Ano</label><input id="lf-ano" name="ano" type="number" inputmode="numeric" class="form-input" /></div>
             <div><label class="form-label" for="lf-km">Quilometragem</label><input id="lf-km" name="km" inputmode="numeric" class="form-input" /></div>
-            <div><label class="form-label" for="lf-preco">Preço sugerido (R$)</label><input id="lf-preco" name="preco" inputmode="numeric" class="form-input" /></div>
           </div>
           <div id="fitWarning" style="display:none;padding:14px 16px;background:rgba(160,24,24,0.06);border:1px solid rgba(160,24,24,0.2);border-radius:10px;font-size:13px;color:var(--red);margin-bottom:1.5rem;">
             <strong style="font-weight:500;">Atenção:</strong> Nosso padrão atual é 2020 ou mais novo, até 40.000 km. Mesmo assim, podemos conversar — clica em enviar que a gente retorna.
@@ -2163,7 +2165,7 @@
     const passos = [
       { n:'01', t:'Chegada', d:'Recebemos a moto no portão. Conversa curta, café, primeira leitura visual.', dur:'15 min', ico:'chegada' },
       { n:'02', t:'Perícia completa', d:'Scanner de espessura de tinta. Análise mecânica, documental e verificação de chassi.', dur:'90 min', ico:'pericia' },
-      { n:'03', t:'Preço e contrato', d:'Você define o mínimo. A gente sugere o teto. Contrato sem custo antecipado.', dur:'No dia', ico:'contrato' },
+      { n:'03', t:'Preço e contrato', d:'Definimos juntos o preço ideal — sua expectativa + dados de mercado. Contrato sem custo antecipado.', dur:'No dia', ico:'contrato' },
       { n:'04', t:'Preparação', d:'Lavagem detalhada, polimento e higienização completa. Sua moto preparada no padrão Kikoautos.', dur:'1 dia', ico:'preparacao' },
       { n:'05', t:'Estúdio', d:'Sessão fotográfica em estúdio próprio. Foto e vídeo no padrão Kikoautos.', dur:'1 dia', ico:'estudio' },
       { n:'06', t:'Ativação', d:'Instagram, Meta Ads, portais, canal de novidades, Best Friends.', dur:'24h', ico:'ativacao' },
@@ -2356,7 +2358,6 @@
     const LIMITE = 40000;
     const SLIDER_MIN = 10000;
     const SLIDER_MAX = 150000;
-    const copyEl = document.getElementById('compCopy');
     let animated = false;
 
     function fmtFull(n) { return 'R$ ' + n.toLocaleString('pt-BR'); }
@@ -2392,12 +2393,6 @@
       const pctVoce = 100 - pctKiko;
       const pctKikoDisplay = fixoMode ? pctKiko.toFixed(1).replace('.', ',') : '5';
       const pctVoceDisplay = fixoMode ? pctVoce.toFixed(1).replace('.', ',') : '95';
-
-      if (copyEl) {
-        copyEl.textContent = fixoMode
-          ? 'A gente cobra R$ 2.000 fixo + R$ 300 de preparação. Você define o piso.'
-          : 'A gente cobra 5% sobre o valor de venda + R$ 300 de preparação. Você define o piso.';
-      }
 
       bigNum.textContent = pctKikoDisplay;
       distVoceTxt.textContent = pctVoceDisplay + '% VOCÊ';
