@@ -111,6 +111,15 @@ app.post('/api/lead-consignacao', async (req, res) => {
   const timer = setTimeout(() => ctrl.abort(), 12000);
 
   let upstream;
+  // DEBUG temporário — investigando erro 400 do RVops. Remover após resolver.
+  const debugBody = JSON.stringify(sentProperties);
+  console.info('[lead-consignacao] DEBUG sending request', {
+    url,
+    apiKeyPrefix: RVOPS_API_KEY.substring(0, 8),
+    apiKeyLength: RVOPS_API_KEY.length,
+    bodyJson: debugBody,
+    bodyLength: debugBody.length
+  });
   try {
     upstream = await fetch(url, {
       method: 'POST',
@@ -134,6 +143,13 @@ app.post('/api/lead-consignacao', async (req, res) => {
     return res.status(502).json({ ok: false, error: 'upstream_unavailable' });
   }
   clearTimeout(timer);
+
+  // DEBUG temporário — investigando erro 400 do RVops. Remover após resolver.
+  console.info('[lead-consignacao] DEBUG response received', {
+    status: upstream.status,
+    statusText: upstream.statusText,
+    headers: Object.fromEntries(upstream.headers.entries())
+  });
 
   if (upstream.status === 409) {
     // ConflictError — lead com mesmo email/phone já existe. Tratado como sucesso.
