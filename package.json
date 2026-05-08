@@ -1,0 +1,15 @@
+{
+  "name": "vendasuamoto-kikoautos",
+  "version": "1.0.0",
+  "description": "Landing page de venda/consignação de motos - Kikoautos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

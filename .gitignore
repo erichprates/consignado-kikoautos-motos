@@ -12,6 +12,12 @@ Thumbs.db
 .idea/
 .vscode/
 
+# Env / secrets — NUNCA versionar
+.env
+.env.local
+.env.*.local
+node_modules/
+
 # Originais / rascunhos soltos no diretório (apenas root — não afeta assets/)
 /Background.png
 /DSC*.png
