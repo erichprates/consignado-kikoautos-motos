@@ -2196,14 +2196,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   /* ---------- Passos ---------- */
   (function(){
     const passos = [
-      { n:'01', t:'Chegada', d:'Recebemos a moto no portão. Conversa curta, café, primeira leitura visual.', dur:'15 min', ico:'chegada' },
-      { n:'02', t:'Perícia completa', d:'Scanner de espessura de tinta. Análise mecânica, documental e verificação de chassi.', dur:'90 min', ico:'pericia' },
-      { n:'03', t:'Preço e contrato', d:'Definimos juntos o preço ideal — sua expectativa + dados de mercado. Contrato sem custo antecipado.', dur:'No dia', ico:'contrato' },
-      { n:'04', t:'Preparação', d:'Lavagem detalhada, polimento e higienização completa. Sua moto preparada no padrão Kikoautos.', dur:'1 dia', ico:'preparacao' },
-      { n:'05', t:'Estúdio', d:'Sessão fotográfica em estúdio próprio. Foto e vídeo no padrão Kikoautos.', dur:'1 dia', ico:'estudio' },
-      { n:'06', t:'Ativação', d:'Instagram, Meta Ads, portais, canal de novidades, Best Friends.', dur:'24h', ico:'ativacao' },
-      { n:'07', t:'Negociação', d:'Equipe conduz todas as tratativas. Só aparece pra você a proposta real.', dur:'Até venda', ico:'negociacao' },
-      { n:'08', t:'Fechamento', d:'Transferência, documentação e pagamento à vista. Você só assina.', dur:'1 - 2 dias', ico:'fechamento' },
+      { n:'01', t:'Chegada', d:'Recebemos a moto no portão. Conversa curta, café, primeira leitura visual.', dur:'15 min', ico:'chegada', img:'assets/etapas/etapa-01-chegada.webp' },
+      { n:'02', t:'Perícia completa', d:'Scanner de espessura de tinta. Análise mecânica, documental e verificação de chassi.', dur:'90 min', ico:'pericia', img:'assets/etapas/etapa-02-pericia.webp' },
+      { n:'03', t:'Preço e contrato', d:'Definimos juntos o preço ideal — sua expectativa + dados de mercado. Contrato sem custo antecipado.', dur:'No dia', ico:'contrato', img:'assets/etapas/etapa-03-contrato.webp' },
+      { n:'04', t:'Preparação', d:'Lavagem detalhada, polimento e higienização completa. Sua moto preparada no padrão Kikoautos.', dur:'1 dia', ico:'preparacao', img:'assets/etapas/etapa-04-preparacao.webp' },
+      { n:'05', t:'Estúdio', d:'Sessão fotográfica em estúdio próprio. Foto e vídeo no padrão Kikoautos.', dur:'1 dia', ico:'estudio', img:'assets/etapas/etapa-05-estudio.webp' },
+      { n:'06', t:'Ativação', d:'Instagram, Meta Ads, portais, canal de novidades, Best Friends.', dur:'24h', ico:'ativacao', img:'assets/etapas/etapa-06-ativacao.webp' },
+      { n:'07', t:'Negociação', d:'Equipe conduz todas as tratativas. Só aparece pra você a proposta real.', dur:'Até venda', ico:'negociacao', img:'assets/etapas/etapa-07-negociacao.webp' },
+      { n:'08', t:'Fechamento', d:'Transferência, documentação e pagamento à vista. Você só assina.', dur:'1 - 2 dias', ico:'fechamento', img:'assets/etapas/etapa-08-fechamento.webp' },
     ];
 
     function icon(kind, color, size, strokeWidth=1.75) {
@@ -2259,13 +2259,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           '</div>' +
         '</div>' +
         '<div class="passo-visual">' +
-          '<div class="passo-visual-grid"></div>' +
-          '<div style="position:relative;display:flex;justify-content:space-between;">' +
+          '<img src="' + p.img + '" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;z-index:0;pointer-events:none;" />' +
+          '<div class="passo-visual-grid" style="z-index:1;"></div>' +
+          '<div style="position:relative;z-index:2;display:flex;justify-content:space-between;">' +
             '<div class="mono" style="font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.5);">' + String(active+1).padStart(2, '0') + ' / 08</div>' +
             '<div class="mono" style="font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.5);">KIKOAUTOS · PROCESSO</div>' +
           '</div>' +
-          '<div style="display:flex;align-items:center;justify-content:center;position:relative;padding:1rem 0;">' + icon(p.ico, KIKO_RED, 96, 1.25) + '</div>' +
-          '<div style="position:relative;display:flex;justify-content:space-between;font-size:11px;" class="mono">' +
+          '<div style="display:flex;align-items:center;justify-content:center;position:relative;z-index:2;padding:1rem 0;">' + icon(p.ico, KIKO_RED, 96, 1.25) + '</div>' +
+          '<div style="position:relative;z-index:2;display:flex;justify-content:space-between;font-size:11px;" class="mono">' +
             '<span style="color:rgba(255,255,255,0.5);">DURAÇÃO</span>' +
             '<span style="color:#fff;letter-spacing:0.1em;">' + p.dur.toUpperCase() + '</span>' +
           '</div>' +
