@@ -195,6 +195,9 @@ app.post('/api/lead-consignacao', async (req, res) => {
     'tipo-de-conversao-20': '-consignado',
     'origem-do-negocio-20': '-site',
     'tipo-de-veiculo1': 'moto',
+    marca_do_veiculo: marca,
+    form_consignado__modelo_do_veiculo: modelo,
+    ano_do_modelo_fabricacao: String(anoInt),
     km: String(kmInt)
   };
 
